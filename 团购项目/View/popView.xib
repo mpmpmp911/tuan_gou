@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="popView">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="400"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SU3-AF-BRg">
+                    <rect key="frame" x="0.0" y="0.0" width="150" height="400"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="U43-6D-H3S">
+                    <rect key="frame" x="150" y="0.0" width="150" height="400"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="U43-6D-H3S" secondAttribute="trailing" id="Cdm-oF-vdq"/>
+                <constraint firstItem="SU3-AF-BRg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Kti-yz-lyO"/>
+                <constraint firstItem="U43-6D-H3S" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="PFa-Hd-qCH"/>
+                <constraint firstItem="U43-6D-H3S" firstAttribute="leading" secondItem="SU3-AF-BRg" secondAttribute="trailing" id="Tig-jF-F5G"/>
+                <constraint firstAttribute="bottom" secondItem="SU3-AF-BRg" secondAttribute="bottom" id="gyF-Ke-Fhv"/>
+                <constraint firstAttribute="bottom" secondItem="U43-6D-H3S" secondAttribute="bottom" id="h6w-8z-O65"/>
+                <constraint firstItem="U43-6D-H3S" firstAttribute="width" secondItem="SU3-AF-BRg" secondAttribute="width" id="ng6-dP-2On"/>
+                <constraint firstItem="SU3-AF-BRg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="o3W-Jr-3Ke"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="453" y="280"/>
+        </view>
+    </objects>
+</document>

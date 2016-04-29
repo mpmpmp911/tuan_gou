@@ -8,24 +8,44 @@
 
 /* Begin PBXBuildFile section */
 		101614451CD08BD900BB47C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 101614441CD08BD900BB47C6 /* main.m */; };
-		101614481CD08BD900BB47C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 101614471CD08BD900BB47C6 /* AppDelegate.m */; };
-		1016144B1CD08BD900BB47C6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1016144A1CD08BD900BB47C6 /* ViewController.m */; };
-		1016144E1CD08BD900BB47C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1016144C1CD08BD900BB47C6 /* Main.storyboard */; };
 		101614501CD08BD900BB47C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1016144F1CD08BD900BB47C6 /* Assets.xcassets */; };
-		101614531CD08BD900BB47C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 101614511CD08BD900BB47C6 /* LaunchScreen.storyboard */; };
+		106F18071CD2053600EBE3BC /* FirstCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 106F17F71CD2053600EBE3BC /* FirstCollectionViewController.m */; };
+		106F18081CD2053600EBE3BC /* MyNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 106F17F91CD2053600EBE3BC /* MyNavController.m */; };
+		106F18091CD2053600EBE3BC /* PopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 106F17FB1CD2053600EBE3BC /* PopViewController.m */; };
+		106F180B1CD2053600EBE3BC /* NavBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 106F18021CD2053600EBE3BC /* NavBarItem.m */; };
+		106F180C1CD2053600EBE3BC /* NavBarItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 106F18031CD2053600EBE3BC /* NavBarItem.xib */; };
+		106F18141CD205AC00EBE3BC /* categories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 106F18101CD205AC00EBE3BC /* categories.plist */; };
+		106F18151CD205AC00EBE3BC /* cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 106F18111CD205AC00EBE3BC /* cities.plist */; };
+		106F18161CD205AC00EBE3BC /* cityGroups.plist in Resources */ = {isa = PBXBuildFile; fileRef = 106F18121CD205AC00EBE3BC /* cityGroups.plist */; };
+		106F18171CD205AC00EBE3BC /* sorts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 106F18131CD205AC00EBE3BC /* sorts.plist */; };
+		106F181A1CD2067A00EBE3BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 106F18191CD2067A00EBE3BC /* AppDelegate.m */; };
+		107CA6F21CD20C27001DB73A /* popView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 107CA6F11CD20C27001DB73A /* popView.xib */; };
+		107CA6F51CD20C3D001DB73A /* popView.m in Sources */ = {isa = PBXBuildFile; fileRef = 107CA6F41CD20C3D001DB73A /* popView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		101614401CD08BD900BB47C6 /* 团购项目.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "团购项目.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		101614441CD08BD900BB47C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		101614461CD08BD900BB47C6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		101614471CD08BD900BB47C6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		101614491CD08BD900BB47C6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1016144A1CD08BD900BB47C6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		1016144D1CD08BD900BB47C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1016144F1CD08BD900BB47C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		101614521CD08BD900BB47C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		101614541CD08BD900BB47C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		106F17F61CD2053600EBE3BC /* FirstCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstCollectionViewController.h; sourceTree = "<group>"; };
+		106F17F71CD2053600EBE3BC /* FirstCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstCollectionViewController.m; sourceTree = "<group>"; };
+		106F17F81CD2053600EBE3BC /* MyNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyNavController.h; sourceTree = "<group>"; };
+		106F17F91CD2053600EBE3BC /* MyNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyNavController.m; sourceTree = "<group>"; };
+		106F17FA1CD2053600EBE3BC /* PopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopViewController.h; sourceTree = "<group>"; };
+		106F17FB1CD2053600EBE3BC /* PopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopViewController.m; sourceTree = "<group>"; };
+		106F18011CD2053600EBE3BC /* NavBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavBarItem.h; sourceTree = "<group>"; };
+		106F18021CD2053600EBE3BC /* NavBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavBarItem.m; sourceTree = "<group>"; };
+		106F18031CD2053600EBE3BC /* NavBarItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavBarItem.xib; sourceTree = "<group>"; };
+		106F18101CD205AC00EBE3BC /* categories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = categories.plist; sourceTree = "<group>"; };
+		106F18111CD205AC00EBE3BC /* cities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cities.plist; sourceTree = "<group>"; };
+		106F18121CD205AC00EBE3BC /* cityGroups.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cityGroups.plist; sourceTree = "<group>"; };
+		106F18131CD205AC00EBE3BC /* sorts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sorts.plist; sourceTree = "<group>"; };
+		106F18181CD2067A00EBE3BC /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		106F18191CD2067A00EBE3BC /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		107CA6F11CD20C27001DB73A /* popView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = popView.xib; sourceTree = "<group>"; };
+		107CA6F31CD20C3D001DB73A /* popView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = popView.h; sourceTree = "<group>"; };
+		107CA6F41CD20C3D001DB73A /* popView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = popView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +78,13 @@
 		101614421CD08BD900BB47C6 /* 团购项目 */ = {
 			isa = PBXGroup;
 			children = (
-				101614461CD08BD900BB47C6 /* AppDelegate.h */,
-				101614471CD08BD900BB47C6 /* AppDelegate.m */,
-				101614491CD08BD900BB47C6 /* ViewController.h */,
-				1016144A1CD08BD900BB47C6 /* ViewController.m */,
-				1016144C1CD08BD900BB47C6 /* Main.storyboard */,
+				106F18181CD2067A00EBE3BC /* AppDelegate.h */,
+				106F18191CD2067A00EBE3BC /* AppDelegate.m */,
+				106F17F51CD2053600EBE3BC /* Controller */,
+				106F17FC1CD2053600EBE3BC /* Model */,
+				106F17FD1CD2053600EBE3BC /* Other */,
+				106F18001CD2053600EBE3BC /* View */,
 				1016144F1CD08BD900BB47C6 /* Assets.xcassets */,
-				101614511CD08BD900BB47C6 /* LaunchScreen.storyboard */,
 				101614541CD08BD900BB47C6 /* Info.plist */,
 				101614431CD08BD900BB47C6 /* Supporting Files */,
 			);
@@ -74,9 +94,61 @@
 		101614431CD08BD900BB47C6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				106F180F1CD205AC00EBE3BC /* PlistData */,
 				101614441CD08BD900BB47C6 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		106F17F51CD2053600EBE3BC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				106F17F61CD2053600EBE3BC /* FirstCollectionViewController.h */,
+				106F17F71CD2053600EBE3BC /* FirstCollectionViewController.m */,
+				106F17F81CD2053600EBE3BC /* MyNavController.h */,
+				106F17F91CD2053600EBE3BC /* MyNavController.m */,
+				106F17FA1CD2053600EBE3BC /* PopViewController.h */,
+				106F17FB1CD2053600EBE3BC /* PopViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		106F17FC1CD2053600EBE3BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		106F17FD1CD2053600EBE3BC /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		106F18001CD2053600EBE3BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				106F18011CD2053600EBE3BC /* NavBarItem.h */,
+				106F18021CD2053600EBE3BC /* NavBarItem.m */,
+				106F18031CD2053600EBE3BC /* NavBarItem.xib */,
+				107CA6F11CD20C27001DB73A /* popView.xib */,
+				107CA6F31CD20C3D001DB73A /* popView.h */,
+				107CA6F41CD20C3D001DB73A /* popView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		106F180F1CD205AC00EBE3BC /* PlistData */ = {
+			isa = PBXGroup;
+			children = (
+				106F18101CD205AC00EBE3BC /* categories.plist */,
+				106F18111CD205AC00EBE3BC /* cities.plist */,
+				106F18121CD205AC00EBE3BC /* cityGroups.plist */,
+				106F18131CD205AC00EBE3BC /* sorts.plist */,
+			);
+			path = PlistData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +209,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				101614531CD08BD900BB47C6 /* LaunchScreen.storyboard in Resources */,
+				107CA6F21CD20C27001DB73A /* popView.xib in Resources */,
+				106F18141CD205AC00EBE3BC /* categories.plist in Resources */,
+				106F180C1CD2053600EBE3BC /* NavBarItem.xib in Resources */,
+				106F18171CD205AC00EBE3BC /* sorts.plist in Resources */,
+				106F18151CD205AC00EBE3BC /* cities.plist in Resources */,
 				101614501CD08BD900BB47C6 /* Assets.xcassets in Resources */,
-				1016144E1CD08BD900BB47C6 /* Main.storyboard in Resources */,
+				106F18161CD205AC00EBE3BC /* cityGroups.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,32 +226,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1016144B1CD08BD900BB47C6 /* ViewController.m in Sources */,
-				101614481CD08BD900BB47C6 /* AppDelegate.m in Sources */,
+				106F180B1CD2053600EBE3BC /* NavBarItem.m in Sources */,
+				106F18071CD2053600EBE3BC /* FirstCollectionViewController.m in Sources */,
+				106F18091CD2053600EBE3BC /* PopViewController.m in Sources */,
 				101614451CD08BD900BB47C6 /* main.m in Sources */,
+				107CA6F51CD20C3D001DB73A /* popView.m in Sources */,
+				106F18081CD2053600EBE3BC /* MyNavController.m in Sources */,
+				106F181A1CD2067A00EBE3BC /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		1016144C1CD08BD900BB47C6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1016144D1CD08BD900BB47C6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		101614511CD08BD900BB47C6 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				101614521CD08BD900BB47C6 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		101614551CD08BD900BB47C6 /* Debug */ = {
@@ -266,10 +327,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "团购项目/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rick.----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -277,10 +341,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "团购项目/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rick.----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
@@ -303,6 +370,7 @@
 				101614591CD08BD900BB47C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
