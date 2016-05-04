@@ -21,6 +21,7 @@
 		106F181A1CD2067A00EBE3BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 106F18191CD2067A00EBE3BC /* AppDelegate.m */; };
 		107CA6F21CD20C27001DB73A /* popView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 107CA6F11CD20C27001DB73A /* popView.xib */; };
 		107CA6F51CD20C3D001DB73A /* popView.m in Sources */ = {isa = PBXBuildFile; fileRef = 107CA6F41CD20C3D001DB73A /* popView.m */; };
+		EDDCB6C91CD8AAB9005077E7 /* CatogriyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EDDCB6C81CD8AAB9005077E7 /* CatogriyModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,8 @@
 		107CA6F11CD20C27001DB73A /* popView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = popView.xib; sourceTree = "<group>"; };
 		107CA6F31CD20C3D001DB73A /* popView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = popView.h; sourceTree = "<group>"; };
 		107CA6F41CD20C3D001DB73A /* popView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = popView.m; sourceTree = "<group>"; };
+		EDDCB6C71CD8AAB9005077E7 /* CatogriyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatogriyModel.h; sourceTree = "<group>"; };
+		EDDCB6C81CD8AAB9005077E7 /* CatogriyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatogriyModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +85,6 @@
 				106F18191CD2067A00EBE3BC /* AppDelegate.m */,
 				106F17F51CD2053600EBE3BC /* Controller */,
 				106F17FC1CD2053600EBE3BC /* Model */,
-				106F17FD1CD2053600EBE3BC /* Other */,
 				106F18001CD2053600EBE3BC /* View */,
 				1016144F1CD08BD900BB47C6 /* Assets.xcassets */,
 				101614541CD08BD900BB47C6 /* Info.plist */,
@@ -116,15 +118,10 @@
 		106F17FC1CD2053600EBE3BC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EDDCB6C71CD8AAB9005077E7 /* CatogriyModel.h */,
+				EDDCB6C81CD8AAB9005077E7 /* CatogriyModel.m */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		106F17FD1CD2053600EBE3BC /* Other */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Other;
 			sourceTree = "<group>";
 		};
 		106F18001CD2053600EBE3BC /* View */ = {
@@ -133,9 +130,9 @@
 				106F18011CD2053600EBE3BC /* NavBarItem.h */,
 				106F18021CD2053600EBE3BC /* NavBarItem.m */,
 				106F18031CD2053600EBE3BC /* NavBarItem.xib */,
-				107CA6F11CD20C27001DB73A /* popView.xib */,
 				107CA6F31CD20C3D001DB73A /* popView.h */,
 				107CA6F41CD20C3D001DB73A /* popView.m */,
+				107CA6F11CD20C27001DB73A /* popView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -231,6 +228,7 @@
 				106F18091CD2053600EBE3BC /* PopViewController.m in Sources */,
 				101614451CD08BD900BB47C6 /* main.m in Sources */,
 				107CA6F51CD20C3D001DB73A /* popView.m in Sources */,
+				EDDCB6C91CD8AAB9005077E7 /* CatogriyModel.m in Sources */,
 				106F18081CD2053600EBE3BC /* MyNavController.m in Sources */,
 				106F181A1CD2067A00EBE3BC /* AppDelegate.m in Sources */,
 			);
