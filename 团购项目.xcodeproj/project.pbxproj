@@ -7,48 +7,72 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		101614451CD08BD900BB47C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 101614441CD08BD900BB47C6 /* main.m */; };
-		101614501CD08BD900BB47C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1016144F1CD08BD900BB47C6 /* Assets.xcassets */; };
-		106F18071CD2053600EBE3BC /* FirstCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 106F17F71CD2053600EBE3BC /* FirstCollectionViewController.m */; };
-		106F18081CD2053600EBE3BC /* MyNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 106F17F91CD2053600EBE3BC /* MyNavController.m */; };
-		106F18091CD2053600EBE3BC /* PopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 106F17FB1CD2053600EBE3BC /* PopViewController.m */; };
-		106F180B1CD2053600EBE3BC /* NavBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 106F18021CD2053600EBE3BC /* NavBarItem.m */; };
-		106F180C1CD2053600EBE3BC /* NavBarItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 106F18031CD2053600EBE3BC /* NavBarItem.xib */; };
-		106F18141CD205AC00EBE3BC /* categories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 106F18101CD205AC00EBE3BC /* categories.plist */; };
-		106F18151CD205AC00EBE3BC /* cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 106F18111CD205AC00EBE3BC /* cities.plist */; };
-		106F18161CD205AC00EBE3BC /* cityGroups.plist in Resources */ = {isa = PBXBuildFile; fileRef = 106F18121CD205AC00EBE3BC /* cityGroups.plist */; };
-		106F18171CD205AC00EBE3BC /* sorts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 106F18131CD205AC00EBE3BC /* sorts.plist */; };
-		106F181A1CD2067A00EBE3BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 106F18191CD2067A00EBE3BC /* AppDelegate.m */; };
-		107CA6F21CD20C27001DB73A /* popView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 107CA6F11CD20C27001DB73A /* popView.xib */; };
-		107CA6F51CD20C3D001DB73A /* popView.m in Sources */ = {isa = PBXBuildFile; fileRef = 107CA6F41CD20C3D001DB73A /* popView.m */; };
-		EDDCB6C91CD8AAB9005077E7 /* CatogriyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EDDCB6C81CD8AAB9005077E7 /* CatogriyModel.m */; };
+		EDE83F0F1CDB585500639B4C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE83EE41CDB585400639B4C /* AppDelegate.m */; };
+		EDE83F101CDB585500639B4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDE83EE51CDB585400639B4C /* Assets.xcassets */; };
+		EDE83F111CDB585500639B4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDE83EE61CDB585400639B4C /* LaunchScreen.storyboard */; };
+		EDE83F121CDB585500639B4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDE83EE81CDB585500639B4C /* Main.storyboard */; };
+		EDE83F131CDB585500639B4C /* ChangeCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE83EEC1CDB585500639B4C /* ChangeCityViewController.m */; };
+		EDE83F141CDB585500639B4C /* ChangeCityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDE83EED1CDB585500639B4C /* ChangeCityViewController.xib */; };
+		EDE83F151CDB585500639B4C /* FirstCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE83EEF1CDB585500639B4C /* FirstCollectionViewController.m */; };
+		EDE83F161CDB585500639B4C /* MyNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE83EF11CDB585500639B4C /* MyNavController.m */; };
+		EDE83F171CDB585500639B4C /* PopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE83EF31CDB585500639B4C /* PopViewController.m */; };
+		EDE83F181CDB585500639B4C /* SearchCityResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE83EF51CDB585500639B4C /* SearchCityResultViewController.m */; };
+		EDE83F191CDB585500639B4C /* SecondPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE83EF71CDB585500639B4C /* SecondPopViewController.m */; };
+		EDE83F1A1CDB585500639B4C /* SecondPopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDE83EF81CDB585500639B4C /* SecondPopViewController.xib */; };
+		EDE83F1B1CDB585500639B4C /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE83EFB1CDB585500639B4C /* UIView+AutoLayout.m */; };
+		EDE83F1C1CDB585500639B4C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EDE83EFC1CDB585500639B4C /* Info.plist */; };
+		EDE83F1D1CDB585500639B4C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE83EFD1CDB585500639B4C /* main.m */; };
+		EDE83F1E1CDB585500639B4C /* CatogriyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE83F001CDB585500639B4C /* CatogriyModel.m */; };
+		EDE83F1F1CDB585500639B4C /* cityGourpsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE83F021CDB585500639B4C /* cityGourpsModel.m */; };
+		EDE83F201CDB585500639B4C /* categories.plist in Resources */ = {isa = PBXBuildFile; fileRef = EDE83F041CDB585500639B4C /* categories.plist */; };
+		EDE83F211CDB585500639B4C /* cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = EDE83F051CDB585500639B4C /* cities.plist */; };
+		EDE83F221CDB585500639B4C /* cityGroups.plist in Resources */ = {isa = PBXBuildFile; fileRef = EDE83F061CDB585500639B4C /* cityGroups.plist */; };
+		EDE83F231CDB585500639B4C /* sorts.plist in Resources */ = {isa = PBXBuildFile; fileRef = EDE83F071CDB585500639B4C /* sorts.plist */; };
+		EDE83F241CDB585500639B4C /* NavBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE83F0A1CDB585500639B4C /* NavBarItem.m */; };
+		EDE83F251CDB585500639B4C /* NavBarItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDE83F0B1CDB585500639B4C /* NavBarItem.xib */; };
+		EDE83F261CDB585500639B4C /* popView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE83F0D1CDB585500639B4C /* popView.m */; };
+		EDE83F271CDB585500639B4C /* popView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDE83F0E1CDB585500639B4C /* popView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		101614401CD08BD900BB47C6 /* 团购项目.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "团购项目.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		101614441CD08BD900BB47C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1016144F1CD08BD900BB47C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		101614541CD08BD900BB47C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		106F17F61CD2053600EBE3BC /* FirstCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstCollectionViewController.h; sourceTree = "<group>"; };
-		106F17F71CD2053600EBE3BC /* FirstCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstCollectionViewController.m; sourceTree = "<group>"; };
-		106F17F81CD2053600EBE3BC /* MyNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyNavController.h; sourceTree = "<group>"; };
-		106F17F91CD2053600EBE3BC /* MyNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyNavController.m; sourceTree = "<group>"; };
-		106F17FA1CD2053600EBE3BC /* PopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopViewController.h; sourceTree = "<group>"; };
-		106F17FB1CD2053600EBE3BC /* PopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopViewController.m; sourceTree = "<group>"; };
-		106F18011CD2053600EBE3BC /* NavBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavBarItem.h; sourceTree = "<group>"; };
-		106F18021CD2053600EBE3BC /* NavBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavBarItem.m; sourceTree = "<group>"; };
-		106F18031CD2053600EBE3BC /* NavBarItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavBarItem.xib; sourceTree = "<group>"; };
-		106F18101CD205AC00EBE3BC /* categories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = categories.plist; sourceTree = "<group>"; };
-		106F18111CD205AC00EBE3BC /* cities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cities.plist; sourceTree = "<group>"; };
-		106F18121CD205AC00EBE3BC /* cityGroups.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cityGroups.plist; sourceTree = "<group>"; };
-		106F18131CD205AC00EBE3BC /* sorts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sorts.plist; sourceTree = "<group>"; };
-		106F18181CD2067A00EBE3BC /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		106F18191CD2067A00EBE3BC /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		107CA6F11CD20C27001DB73A /* popView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = popView.xib; sourceTree = "<group>"; };
-		107CA6F31CD20C3D001DB73A /* popView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = popView.h; sourceTree = "<group>"; };
-		107CA6F41CD20C3D001DB73A /* popView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = popView.m; sourceTree = "<group>"; };
-		EDDCB6C71CD8AAB9005077E7 /* CatogriyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatogriyModel.h; sourceTree = "<group>"; };
-		EDDCB6C81CD8AAB9005077E7 /* CatogriyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatogriyModel.m; sourceTree = "<group>"; };
+		EDE83EE31CDB585400639B4C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EDE83EE41CDB585400639B4C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EDE83EE51CDB585400639B4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EDE83EE71CDB585400639B4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EDE83EE91CDB585500639B4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EDE83EEB1CDB585500639B4C /* ChangeCityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeCityViewController.h; sourceTree = "<group>"; };
+		EDE83EEC1CDB585500639B4C /* ChangeCityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeCityViewController.m; sourceTree = "<group>"; };
+		EDE83EED1CDB585500639B4C /* ChangeCityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChangeCityViewController.xib; sourceTree = "<group>"; };
+		EDE83EEE1CDB585500639B4C /* FirstCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstCollectionViewController.h; sourceTree = "<group>"; };
+		EDE83EEF1CDB585500639B4C /* FirstCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstCollectionViewController.m; sourceTree = "<group>"; };
+		EDE83EF01CDB585500639B4C /* MyNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyNavController.h; sourceTree = "<group>"; };
+		EDE83EF11CDB585500639B4C /* MyNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyNavController.m; sourceTree = "<group>"; };
+		EDE83EF21CDB585500639B4C /* PopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopViewController.h; sourceTree = "<group>"; };
+		EDE83EF31CDB585500639B4C /* PopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopViewController.m; sourceTree = "<group>"; };
+		EDE83EF41CDB585500639B4C /* SearchCityResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchCityResultViewController.h; sourceTree = "<group>"; };
+		EDE83EF51CDB585500639B4C /* SearchCityResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchCityResultViewController.m; sourceTree = "<group>"; };
+		EDE83EF61CDB585500639B4C /* SecondPopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondPopViewController.h; sourceTree = "<group>"; };
+		EDE83EF71CDB585500639B4C /* SecondPopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondPopViewController.m; sourceTree = "<group>"; };
+		EDE83EF81CDB585500639B4C /* SecondPopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondPopViewController.xib; sourceTree = "<group>"; };
+		EDE83EFA1CDB585500639B4C /* UIView+AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayout.h"; sourceTree = "<group>"; };
+		EDE83EFB1CDB585500639B4C /* UIView+AutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayout.m"; sourceTree = "<group>"; };
+		EDE83EFC1CDB585500639B4C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDE83EFD1CDB585500639B4C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EDE83EFF1CDB585500639B4C /* CatogriyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatogriyModel.h; sourceTree = "<group>"; };
+		EDE83F001CDB585500639B4C /* CatogriyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatogriyModel.m; sourceTree = "<group>"; };
+		EDE83F011CDB585500639B4C /* cityGourpsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cityGourpsModel.h; sourceTree = "<group>"; };
+		EDE83F021CDB585500639B4C /* cityGourpsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cityGourpsModel.m; sourceTree = "<group>"; };
+		EDE83F041CDB585500639B4C /* categories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = categories.plist; sourceTree = "<group>"; };
+		EDE83F051CDB585500639B4C /* cities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cities.plist; sourceTree = "<group>"; };
+		EDE83F061CDB585500639B4C /* cityGroups.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cityGroups.plist; sourceTree = "<group>"; };
+		EDE83F071CDB585500639B4C /* sorts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sorts.plist; sourceTree = "<group>"; };
+		EDE83F091CDB585500639B4C /* NavBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavBarItem.h; sourceTree = "<group>"; };
+		EDE83F0A1CDB585500639B4C /* NavBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavBarItem.m; sourceTree = "<group>"; };
+		EDE83F0B1CDB585500639B4C /* NavBarItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavBarItem.xib; sourceTree = "<group>"; };
+		EDE83F0C1CDB585500639B4C /* popView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = popView.h; sourceTree = "<group>"; };
+		EDE83F0D1CDB585500639B4C /* popView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = popView.m; sourceTree = "<group>"; };
+		EDE83F0E1CDB585500639B4C /* popView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = popView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +89,7 @@
 		101614371CD08BD900BB47C6 = {
 			isa = PBXGroup;
 			children = (
-				101614421CD08BD900BB47C6 /* 团购项目 */,
+				EDE83EE21CDB585400639B4C /* 团购项目 */,
 				101614411CD08BD900BB47C6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -78,74 +102,88 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		101614421CD08BD900BB47C6 /* 团购项目 */ = {
+		EDE83EE21CDB585400639B4C /* 团购项目 */ = {
 			isa = PBXGroup;
 			children = (
-				106F18181CD2067A00EBE3BC /* AppDelegate.h */,
-				106F18191CD2067A00EBE3BC /* AppDelegate.m */,
-				106F17F51CD2053600EBE3BC /* Controller */,
-				106F17FC1CD2053600EBE3BC /* Model */,
-				106F18001CD2053600EBE3BC /* View */,
-				1016144F1CD08BD900BB47C6 /* Assets.xcassets */,
-				101614541CD08BD900BB47C6 /* Info.plist */,
-				101614431CD08BD900BB47C6 /* Supporting Files */,
+				EDE83EE31CDB585400639B4C /* AppDelegate.h */,
+				EDE83EE41CDB585400639B4C /* AppDelegate.m */,
+				EDE83EE51CDB585400639B4C /* Assets.xcassets */,
+				EDE83EE61CDB585400639B4C /* LaunchScreen.storyboard */,
+				EDE83EE81CDB585500639B4C /* Main.storyboard */,
+				EDE83EEA1CDB585500639B4C /* Controller */,
+				EDE83EF91CDB585500639B4C /* extension */,
+				EDE83EFC1CDB585500639B4C /* Info.plist */,
+				EDE83EFD1CDB585500639B4C /* main.m */,
+				EDE83EFE1CDB585500639B4C /* Model */,
+				EDE83F031CDB585500639B4C /* PlistData */,
+				EDE83F081CDB585500639B4C /* View */,
 			);
 			path = "团购项目";
 			sourceTree = "<group>";
 		};
-		101614431CD08BD900BB47C6 /* Supporting Files */ = {
+		EDE83EEA1CDB585500639B4C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				106F180F1CD205AC00EBE3BC /* PlistData */,
-				101614441CD08BD900BB47C6 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		106F17F51CD2053600EBE3BC /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				106F17F61CD2053600EBE3BC /* FirstCollectionViewController.h */,
-				106F17F71CD2053600EBE3BC /* FirstCollectionViewController.m */,
-				106F17F81CD2053600EBE3BC /* MyNavController.h */,
-				106F17F91CD2053600EBE3BC /* MyNavController.m */,
-				106F17FA1CD2053600EBE3BC /* PopViewController.h */,
-				106F17FB1CD2053600EBE3BC /* PopViewController.m */,
+				EDE83EEE1CDB585500639B4C /* FirstCollectionViewController.h */,
+				EDE83EEF1CDB585500639B4C /* FirstCollectionViewController.m */,
+				EDE83EF01CDB585500639B4C /* MyNavController.h */,
+				EDE83EF11CDB585500639B4C /* MyNavController.m */,
+				EDE83EF21CDB585500639B4C /* PopViewController.h */,
+				EDE83EF31CDB585500639B4C /* PopViewController.m */,
+				EDE83EF61CDB585500639B4C /* SecondPopViewController.h */,
+				EDE83EF71CDB585500639B4C /* SecondPopViewController.m */,
+				EDE83EF81CDB585500639B4C /* SecondPopViewController.xib */,
+				EDE83EEB1CDB585500639B4C /* ChangeCityViewController.h */,
+				EDE83EEC1CDB585500639B4C /* ChangeCityViewController.m */,
+				EDE83EED1CDB585500639B4C /* ChangeCityViewController.xib */,
+				EDE83EF41CDB585500639B4C /* SearchCityResultViewController.h */,
+				EDE83EF51CDB585500639B4C /* SearchCityResultViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		106F17FC1CD2053600EBE3BC /* Model */ = {
+		EDE83EF91CDB585500639B4C /* extension */ = {
 			isa = PBXGroup;
 			children = (
-				EDDCB6C71CD8AAB9005077E7 /* CatogriyModel.h */,
-				EDDCB6C81CD8AAB9005077E7 /* CatogriyModel.m */,
+				EDE83EFA1CDB585500639B4C /* UIView+AutoLayout.h */,
+				EDE83EFB1CDB585500639B4C /* UIView+AutoLayout.m */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		EDE83EFE1CDB585500639B4C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EDE83EFF1CDB585500639B4C /* CatogriyModel.h */,
+				EDE83F001CDB585500639B4C /* CatogriyModel.m */,
+				EDE83F011CDB585500639B4C /* cityGourpsModel.h */,
+				EDE83F021CDB585500639B4C /* cityGourpsModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		106F18001CD2053600EBE3BC /* View */ = {
+		EDE83F031CDB585500639B4C /* PlistData */ = {
 			isa = PBXGroup;
 			children = (
-				106F18011CD2053600EBE3BC /* NavBarItem.h */,
-				106F18021CD2053600EBE3BC /* NavBarItem.m */,
-				106F18031CD2053600EBE3BC /* NavBarItem.xib */,
-				107CA6F31CD20C3D001DB73A /* popView.h */,
-				107CA6F41CD20C3D001DB73A /* popView.m */,
-				107CA6F11CD20C27001DB73A /* popView.xib */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		106F180F1CD205AC00EBE3BC /* PlistData */ = {
-			isa = PBXGroup;
-			children = (
-				106F18101CD205AC00EBE3BC /* categories.plist */,
-				106F18111CD205AC00EBE3BC /* cities.plist */,
-				106F18121CD205AC00EBE3BC /* cityGroups.plist */,
-				106F18131CD205AC00EBE3BC /* sorts.plist */,
+				EDE83F041CDB585500639B4C /* categories.plist */,
+				EDE83F051CDB585500639B4C /* cities.plist */,
+				EDE83F061CDB585500639B4C /* cityGroups.plist */,
+				EDE83F071CDB585500639B4C /* sorts.plist */,
 			);
 			path = PlistData;
+			sourceTree = "<group>";
+		};
+		EDE83F081CDB585500639B4C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EDE83F091CDB585500639B4C /* NavBarItem.h */,
+				EDE83F0A1CDB585500639B4C /* NavBarItem.m */,
+				EDE83F0B1CDB585500639B4C /* NavBarItem.xib */,
+				EDE83F0C1CDB585500639B4C /* popView.h */,
+				EDE83F0D1CDB585500639B4C /* popView.m */,
+				EDE83F0E1CDB585500639B4C /* popView.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,13 +244,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				107CA6F21CD20C27001DB73A /* popView.xib in Resources */,
-				106F18141CD205AC00EBE3BC /* categories.plist in Resources */,
-				106F180C1CD2053600EBE3BC /* NavBarItem.xib in Resources */,
-				106F18171CD205AC00EBE3BC /* sorts.plist in Resources */,
-				106F18151CD205AC00EBE3BC /* cities.plist in Resources */,
-				101614501CD08BD900BB47C6 /* Assets.xcassets in Resources */,
-				106F18161CD205AC00EBE3BC /* cityGroups.plist in Resources */,
+				EDE83F121CDB585500639B4C /* Main.storyboard in Resources */,
+				EDE83F101CDB585500639B4C /* Assets.xcassets in Resources */,
+				EDE83F271CDB585500639B4C /* popView.xib in Resources */,
+				EDE83F231CDB585500639B4C /* sorts.plist in Resources */,
+				EDE83F1C1CDB585500639B4C /* Info.plist in Resources */,
+				EDE83F111CDB585500639B4C /* LaunchScreen.storyboard in Resources */,
+				EDE83F141CDB585500639B4C /* ChangeCityViewController.xib in Resources */,
+				EDE83F221CDB585500639B4C /* cityGroups.plist in Resources */,
+				EDE83F1A1CDB585500639B4C /* SecondPopViewController.xib in Resources */,
+				EDE83F251CDB585500639B4C /* NavBarItem.xib in Resources */,
+				EDE83F201CDB585500639B4C /* categories.plist in Resources */,
+				EDE83F211CDB585500639B4C /* cities.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,18 +266,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				106F180B1CD2053600EBE3BC /* NavBarItem.m in Sources */,
-				106F18071CD2053600EBE3BC /* FirstCollectionViewController.m in Sources */,
-				106F18091CD2053600EBE3BC /* PopViewController.m in Sources */,
-				101614451CD08BD900BB47C6 /* main.m in Sources */,
-				107CA6F51CD20C3D001DB73A /* popView.m in Sources */,
-				EDDCB6C91CD8AAB9005077E7 /* CatogriyModel.m in Sources */,
-				106F18081CD2053600EBE3BC /* MyNavController.m in Sources */,
-				106F181A1CD2067A00EBE3BC /* AppDelegate.m in Sources */,
+				EDE83F241CDB585500639B4C /* NavBarItem.m in Sources */,
+				EDE83F151CDB585500639B4C /* FirstCollectionViewController.m in Sources */,
+				EDE83F261CDB585500639B4C /* popView.m in Sources */,
+				EDE83F1F1CDB585500639B4C /* cityGourpsModel.m in Sources */,
+				EDE83F1B1CDB585500639B4C /* UIView+AutoLayout.m in Sources */,
+				EDE83F171CDB585500639B4C /* PopViewController.m in Sources */,
+				EDE83F1E1CDB585500639B4C /* CatogriyModel.m in Sources */,
+				EDE83F181CDB585500639B4C /* SearchCityResultViewController.m in Sources */,
+				EDE83F0F1CDB585500639B4C /* AppDelegate.m in Sources */,
+				EDE83F131CDB585500639B4C /* ChangeCityViewController.m in Sources */,
+				EDE83F161CDB585500639B4C /* MyNavController.m in Sources */,
+				EDE83F1D1CDB585500639B4C /* main.m in Sources */,
+				EDE83F191CDB585500639B4C /* SecondPopViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EDE83EE61CDB585400639B4C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDE83EE71CDB585400639B4C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EDE83EE81CDB585500639B4C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDE83EE91CDB585500639B4C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		101614551CD08BD900BB47C6 /* Debug */ = {

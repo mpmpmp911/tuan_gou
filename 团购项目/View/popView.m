@@ -52,7 +52,6 @@
     }else {
        cell.textLabel.text = _selectedMode.subcategories[indexPath.row];
     }
-    
     return cell;
 }
 

@@ -9,6 +9,7 @@
 #import "FirstCollectionViewController.h"
 #import "NavBarItem.h"
 #import "PopViewController.h"
+#import "SecondPopViewController.h"
 
 
 @interface FirstCollectionViewController () {
@@ -73,19 +74,29 @@ static NSString * const reuseIdentifier = @"Cell";
 
 - (void)secondItemClick {
     NSLog(@"2");
+    [self createSecondPopover];
 }
 
 - (void)thirdItemClick {
     NSLog(@"3");
 }
 
-#pragma mark -创建下拉菜单
+#pragma mark -创建第一个下拉菜单
 - (void)createPopover {
     
     PopViewController *pvc = [[PopViewController alloc] init];
     UIPopoverController *pop = [[UIPopoverController alloc]initWithContentViewController:pvc];
     [pop presentPopoverFromBarButtonItem:firstItem permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
 
+}
+
+#pragma mark -创建第二个下拉菜单
+- (void)createSecondPopover {
+    
+    SecondPopViewController *pvc = [[SecondPopViewController alloc] initWithNibName:@"SecondPopViewController" bundle:nil];
+    UIPopoverController *pop = [[UIPopoverController alloc]initWithContentViewController:pvc];
+    [pop presentPopoverFromBarButtonItem:secondItem permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+    
 }
 
 - (void)didReceiveMemoryWarning {
