@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED0A4F881CEAEC0400C466B3 /* Cities.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0A4F871CEAEC0400C466B3 /* Cities.m */; };
+		ED635FB21CEC52360037755E /* DPAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = ED635FAE1CEC52360037755E /* DPAPI.m */; };
+		ED635FB31CEC52360037755E /* DPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = ED635FB11CEC52360037755E /* DPRequest.m */; };
 		EDE83F0F1CDB585500639B4C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE83EE41CDB585400639B4C /* AppDelegate.m */; };
 		EDE83F101CDB585500639B4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDE83EE51CDB585400639B4C /* Assets.xcassets */; };
 		EDE83F111CDB585500639B4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDE83EE61CDB585400639B4C /* LaunchScreen.storyboard */; };
@@ -36,6 +39,13 @@
 
 /* Begin PBXFileReference section */
 		101614401CD08BD900BB47C6 /* 团购项目.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "团购项目.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED0A4F861CEAEC0400C466B3 /* Cities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cities.h; sourceTree = "<group>"; };
+		ED0A4F871CEAEC0400C466B3 /* Cities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cities.m; sourceTree = "<group>"; };
+		ED635FAD1CEC52360037755E /* DPAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPAPI.h; sourceTree = "<group>"; };
+		ED635FAE1CEC52360037755E /* DPAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPAPI.m; sourceTree = "<group>"; };
+		ED635FAF1CEC52360037755E /* DPConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPConstants.h; sourceTree = "<group>"; };
+		ED635FB01CEC52360037755E /* DPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPRequest.h; sourceTree = "<group>"; };
+		ED635FB11CEC52360037755E /* DPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPRequest.m; sourceTree = "<group>"; };
 		EDE83EE31CDB585400639B4C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EDE83EE41CDB585400639B4C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		EDE83EE51CDB585400639B4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -102,9 +112,22 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		ED635FAC1CEC52360037755E /* dianpingapi */ = {
+			isa = PBXGroup;
+			children = (
+				ED635FAD1CEC52360037755E /* DPAPI.h */,
+				ED635FAE1CEC52360037755E /* DPAPI.m */,
+				ED635FAF1CEC52360037755E /* DPConstants.h */,
+				ED635FB01CEC52360037755E /* DPRequest.h */,
+				ED635FB11CEC52360037755E /* DPRequest.m */,
+			);
+			path = dianpingapi;
+			sourceTree = "<group>";
+		};
 		EDE83EE21CDB585400639B4C /* 团购项目 */ = {
 			isa = PBXGroup;
 			children = (
+				ED635FAC1CEC52360037755E /* dianpingapi */,
 				EDE83EE31CDB585400639B4C /* AppDelegate.h */,
 				EDE83EE41CDB585400639B4C /* AppDelegate.m */,
 				EDE83EE51CDB585400639B4C /* Assets.xcassets */,
@@ -158,6 +181,8 @@
 				EDE83F001CDB585500639B4C /* CatogriyModel.m */,
 				EDE83F011CDB585500639B4C /* cityGourpsModel.h */,
 				EDE83F021CDB585500639B4C /* cityGourpsModel.m */,
+				ED0A4F861CEAEC0400C466B3 /* Cities.h */,
+				ED0A4F871CEAEC0400C466B3 /* Cities.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -266,8 +291,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED635FB21CEC52360037755E /* DPAPI.m in Sources */,
 				EDE83F241CDB585500639B4C /* NavBarItem.m in Sources */,
 				EDE83F151CDB585500639B4C /* FirstCollectionViewController.m in Sources */,
+				ED635FB31CEC52360037755E /* DPRequest.m in Sources */,
+				ED0A4F881CEAEC0400C466B3 /* Cities.m in Sources */,
 				EDE83F261CDB585500639B4C /* popView.m in Sources */,
 				EDE83F1F1CDB585500639B4C /* cityGourpsModel.m in Sources */,
 				EDE83F1B1CDB585500639B4C /* UIView+AutoLayout.m in Sources */,

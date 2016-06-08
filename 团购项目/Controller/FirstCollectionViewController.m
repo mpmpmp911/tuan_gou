@@ -10,13 +10,19 @@
 #import "NavBarItem.h"
 #import "PopViewController.h"
 #import "SecondPopViewController.h"
+#import "CatogriyModel.h"
+#import "DPAPI.h"
+#import "Cities.h"
 
 
-@interface FirstCollectionViewController () {
+@interface FirstCollectionViewController ()<DPRequestDelegate> {
     
     UIBarButtonItem *firstItem;
     UIBarButtonItem *secondItem;
     UIBarButtonItem *thirdItem;
+    
+    NSString *_selectedCityName;
+    NSString *_selectedCategory;
 
 }
 @end
@@ -40,6 +46,10 @@ static NSString * const reuseIdentifier = @"Cell";
     self.collectionView.backgroundColor = [UIColor whiteColor];
     [self createNavBar];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(categoryChange:) name:@"categoryDidChanged" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(subCategoryChange:) name:@"subCategoryDidChanged" object:nil];
+    
+     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(cityChange:) name:@"cityDidChanged" object:nil];
     // Uncomment the following line to preserve selection between presentations
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -48,6 +58,66 @@ static NSString * const reuseIdentifier = @"Cell";
     
     // Do any additional setup after loading the view.
 }
+
+- (void)cityChange:(NSNotification*)noti{
+    _selectedCityName =  noti.userInfo[@"cityName"];
+    
+    //发送网络请求
+    [self createRequest];
+}
+
+
+- (void)categoryChange:(NSNotification*)noti{
+    CatogriyModel *md = (CatogriyModel*)noti.userInfo[@"categoryModel"];
+    NSLog(@"左表：%@",md.name);
+    _selectedCategory = md.name;
+    
+    //发送网络请求
+    [self createRequest];
+    
+    
+}
+
+- (void)subCategoryChange:(NSNotification*)noti{
+    CatogriyModel *md = (CatogriyModel*)noti.userInfo[@"categoryModel"];
+    NSString *str = noti.userInfo[@"subCategoryName"];
+    NSLog(@"左表：%@",md.name);
+    NSLog(@"从表%@",str);
+    if (!md.subcategories.count) {
+        _selectedCategory = md.name;
+    } else {
+        if ([str isEqualToString:@"全部"]) {
+            _selectedCategory = md.name;
+        } else {
+            _selectedCategory = str;
+        }
+    }
+    //发送网络请求
+    [self createRequest];
+}
+
+#pragma mark - 网络请求
+- (void)createRequest{
+    DPAPI *api = [[DPAPI alloc]init];
+    NSMutableDictionary *params = [[NSMutableDictionary alloc]init];
+    [params setValue:_selectedCityName forKey:@"city"];
+    [params setValue:_selectedCategory forKey:@"category"];
+    [api requestWithURL:@"v1/deal/find_deals" params:params delegate:self];
+}
+
+//- (void)request:(DPRequest *)request didReceiveResponse:(NSURLResponse *)response {
+//    
+//}
+//- (void)request:(DPRequest *)request didReceiveRawData:(NSData *)data {
+//    
+//}
+- (void)request:(DPRequest *)request didFailWithError:(NSError *)error {
+    NSLog(@"%@",error);
+}
+- (void)request:(DPRequest *)request didFinishLoadingWithResult:(id)result {
+    NSLog(@"%@",result);
+}
+
 
 - (void)createNavBar {
     UIBarButtonItem *logo   = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"icon_meituan_logo"] style:UIBarButtonItemStyleDone target:nil action:nil];

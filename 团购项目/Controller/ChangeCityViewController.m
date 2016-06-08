@@ -68,7 +68,12 @@
 }
 
 #pragma mark -table view delegate
-
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    cityGourpsModel *md = [_dataArray objectAtIndex:indexPath.section];
+    
+    [[NSNotificationCenter defaultCenter]postNotificationName:@"cityDidChanged" object:nil userInfo:@{@"cityName":md.cities[indexPath.row]}];
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 #pragma mark -UISearchBarDelegate
 - (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar {
@@ -84,6 +89,7 @@
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
     if(searchText.length) {
         self.searchResultVC.view.hidden = NO;
+        self.searchResultVC.searchText = searchText;
     } else {
         self.searchResultVC.view.hidden = YES;
     }
@@ -102,8 +108,6 @@
         [self.searchResultVC.view autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsZero excludingEdge:ALEdgeTop];
         //让searchResultVC的顶部 贴着搜索框的底部  不遮盖住搜索框
         [self.searchResultVC.view autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:self.seachBar];
-        
-        
     }
     return _searchResultVC;
 }

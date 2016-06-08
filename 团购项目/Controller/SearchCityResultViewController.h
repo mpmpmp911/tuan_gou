@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface SearchCityResultViewController : UITableViewController
+@property (nonatomic,copy)NSString *searchText;
+
+@property (nonatomic,strong)NSArray *citiesArray;
 
 @end

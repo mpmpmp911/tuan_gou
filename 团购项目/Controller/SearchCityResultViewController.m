@@ -7,8 +7,13 @@
 //
 
 #import "SearchCityResultViewController.h"
+#import "Cities.h"
 
-@interface SearchCityResultViewController ()
+
+@interface SearchCityResultViewController  (){
+    NSMutableArray *_searchResultArray;
+}
+
 
 @end
 
@@ -29,27 +34,52 @@
     // Dispose of any resources that can be recreated.
 }
 
+//重写set方法
+- (void)setSearchText:(NSString *)searchText {
+    _searchText = [searchText lowercaseString];
+    _searchResultArray = [[NSMutableArray alloc] init];
+    //获取所有城市信息
+    if(!_citiesArray) {
+        _citiesArray = [Cities getCities];
+    }
+    //遍历，获取数据
+    for (Cities *city in _citiesArray) {
+        if ([city.name containsString:_searchText] ||
+            [city.pinYin containsString:_searchText] ||
+            [city.pinYinHead containsString:_searchText] ) {
+             [_searchResultArray addObject:city];
+        }
+    }
+    [self.tableView reloadData];
+}
+
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
-}
+//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+//#warning Incomplete implementation, return the number of sections
+//    return 0;
+//}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return _searchResultArray.count;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
+    static NSString *str = @"searchCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:str];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:str];
+    }
     // Configure the cell...
+    Cities *city = [_searchResultArray objectAtIndex:indexPath.row
+                    ];
+    cell.textLabel.text = city.name;
+    
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.

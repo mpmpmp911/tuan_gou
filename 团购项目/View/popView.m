@@ -7,13 +7,15 @@
 //
 
 #import "popView.h"
-#import "CatogriyModel.h"
+
 
 @interface popView ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *leftTV;
 @property (weak, nonatomic) IBOutlet UITableView *rightTV;
-@property (strong,nonatomic) CatogriyModel * selectedMode;
+
+
+@property (assign,nonatomic)  NSInteger selectRow;
 
 @end
 
@@ -27,9 +29,9 @@
 #pragma mark  -UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if(tableView == _leftTV){
-        return _categriyArr.count;
+        return [self.dataSource numberOfRowsinLeftTableView:self];
     }else {
-        return _selectedMode.subcategories.count;
+        return [self.dataSource popView:self subDataForRow:_selectRow].count;
     }
 }
 
@@ -41,16 +43,17 @@
     }
     
     if(tableView == _leftTV){
-        CatogriyModel *md = [_categriyArr objectAtIndex:indexPath.row];
-        cell.textLabel.text  = md.name;
-        cell.imageView.image = [UIImage imageNamed:md.small_icon];
-        if (md.subcategories.count) {
+       
+        cell.textLabel.text  = [self.dataSource popView:self titleForRow:indexPath.row];
+        cell.imageView.image = [UIImage imageNamed:[self.dataSource popView:self imageForRow:indexPath.row]];
+        NSArray * subArray = [self.dataSource popView:self subDataForRow:indexPath.row];
+        if (subArray.count) {
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         }else{
             cell.accessoryType = UITableViewCellAccessoryNone;
         }
     }else {
-       cell.textLabel.text = _selectedMode.subcategories[indexPath.row];
+        cell.textLabel.text = [self.dataSource popView:self subDataForRow:_selectRow][indexPath.row];
     }
     return cell;
 }
@@ -58,8 +61,17 @@
 #pragma mark  -UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (tableView == _leftTV) {
-        _selectedMode = [_categriyArr objectAtIndex:indexPath.row];
+        self.selectRow = indexPath.row;
         [_rightTV reloadData];
+        if ([self.delegate respondsToSelector:@selector(leftpopView: didSelectRowAtIndexPath:)]) {
+            //进一步实现
+            [self.delegate leftpopView:self didSelectRowAtIndexPath:indexPath.row];
+        }
+    } else {
+        if ([self.delegate respondsToSelector:@selector(rightpopView:didSelectRowAtIndexPath:)]) {
+            //进一步实现
+            [self.delegate rightpopView:self didSelectRowAtIndexPath:indexPath.row];
+        }
     }
 }
 
