@@ -10,6 +10,7 @@
 		ED0A4F881CEAEC0400C466B3 /* Cities.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0A4F871CEAEC0400C466B3 /* Cities.m */; };
 		ED635FB21CEC52360037755E /* DPAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = ED635FAE1CEC52360037755E /* DPAPI.m */; };
 		ED635FB31CEC52360037755E /* DPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = ED635FB11CEC52360037755E /* DPRequest.m */; };
+		ED8C923E1D1BB4E60072A1A8 /* dealModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8C923D1D1BB4E60072A1A8 /* dealModel.m */; };
 		EDE83F0F1CDB585500639B4C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE83EE41CDB585400639B4C /* AppDelegate.m */; };
 		EDE83F101CDB585500639B4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDE83EE51CDB585400639B4C /* Assets.xcassets */; };
 		EDE83F111CDB585500639B4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDE83EE61CDB585400639B4C /* LaunchScreen.storyboard */; };
@@ -46,6 +47,8 @@
 		ED635FAF1CEC52360037755E /* DPConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPConstants.h; sourceTree = "<group>"; };
 		ED635FB01CEC52360037755E /* DPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPRequest.h; sourceTree = "<group>"; };
 		ED635FB11CEC52360037755E /* DPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPRequest.m; sourceTree = "<group>"; };
+		ED8C923C1D1BB4E60072A1A8 /* dealModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dealModel.h; sourceTree = "<group>"; };
+		ED8C923D1D1BB4E60072A1A8 /* dealModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dealModel.m; sourceTree = "<group>"; };
 		EDE83EE31CDB585400639B4C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EDE83EE41CDB585400639B4C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		EDE83EE51CDB585400639B4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -183,6 +186,8 @@
 				EDE83F021CDB585500639B4C /* cityGourpsModel.m */,
 				ED0A4F861CEAEC0400C466B3 /* Cities.h */,
 				ED0A4F871CEAEC0400C466B3 /* Cities.m */,
+				ED8C923C1D1BB4E60072A1A8 /* dealModel.h */,
+				ED8C923D1D1BB4E60072A1A8 /* dealModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -305,6 +310,7 @@
 				EDE83F0F1CDB585500639B4C /* AppDelegate.m in Sources */,
 				EDE83F131CDB585500639B4C /* ChangeCityViewController.m in Sources */,
 				EDE83F161CDB585500639B4C /* MyNavController.m in Sources */,
+				ED8C923E1D1BB4E60072A1A8 /* dealModel.m in Sources */,
 				EDE83F1D1CDB585500639B4C /* main.m in Sources */,
 				EDE83F191CDB585500639B4C /* SecondPopViewController.m in Sources */,
 			);

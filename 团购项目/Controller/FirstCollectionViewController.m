@@ -13,6 +13,7 @@
 #import "CatogriyModel.h"
 #import "DPAPI.h"
 #import "Cities.h"
+#import "dealModel.h"
 
 
 @interface FirstCollectionViewController ()<DPRequestDelegate> {
@@ -115,7 +116,12 @@ static NSString * const reuseIdentifier = @"Cell";
     NSLog(@"%@",error);
 }
 - (void)request:(DPRequest *)request didFinishLoadingWithResult:(id)result {
-    NSLog(@"%@",result);
+    NSDictionary *dict = result;
+    dealModel *md = [[dealModel alloc]init];
+    NSArray *modelArray = [md assignModelWithDict:dict];
+    NSLog(@"%@",modelArray);
+    NSLog(@"数组个数%lu --- %@",(unsigned long)modelArray.count,[modelArray[0]title]);
+    
 }
 
 
