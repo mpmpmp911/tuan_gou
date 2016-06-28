@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		ED0A4F881CEAEC0400C466B3 /* Cities.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0A4F871CEAEC0400C466B3 /* Cities.m */; };
+		ED628AD41D211973001B404D /* MainCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED628AD21D211973001B404D /* MainCollectionViewCell.m */; };
+		ED628AD51D211973001B404D /* MainCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED628AD31D211973001B404D /* MainCollectionViewCell.xib */; };
 		ED635FB21CEC52360037755E /* DPAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = ED635FAE1CEC52360037755E /* DPAPI.m */; };
 		ED635FB31CEC52360037755E /* DPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = ED635FB11CEC52360037755E /* DPRequest.m */; };
 		ED8C923E1D1BB4E60072A1A8 /* dealModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8C923D1D1BB4E60072A1A8 /* dealModel.m */; };
@@ -42,6 +44,9 @@
 		101614401CD08BD900BB47C6 /* 团购项目.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "团购项目.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED0A4F861CEAEC0400C466B3 /* Cities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cities.h; sourceTree = "<group>"; };
 		ED0A4F871CEAEC0400C466B3 /* Cities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cities.m; sourceTree = "<group>"; };
+		ED628AD11D211973001B404D /* MainCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainCollectionViewCell.h; sourceTree = "<group>"; };
+		ED628AD21D211973001B404D /* MainCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainCollectionViewCell.m; sourceTree = "<group>"; };
+		ED628AD31D211973001B404D /* MainCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainCollectionViewCell.xib; sourceTree = "<group>"; };
 		ED635FAD1CEC52360037755E /* DPAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPAPI.h; sourceTree = "<group>"; };
 		ED635FAE1CEC52360037755E /* DPAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPAPI.m; sourceTree = "<group>"; };
 		ED635FAF1CEC52360037755E /* DPConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPConstants.h; sourceTree = "<group>"; };
@@ -212,6 +217,9 @@
 				EDE83F0C1CDB585500639B4C /* popView.h */,
 				EDE83F0D1CDB585500639B4C /* popView.m */,
 				EDE83F0E1CDB585500639B4C /* popView.xib */,
+				ED628AD11D211973001B404D /* MainCollectionViewCell.h */,
+				ED628AD21D211973001B404D /* MainCollectionViewCell.m */,
+				ED628AD31D211973001B404D /* MainCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -275,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDE83F121CDB585500639B4C /* Main.storyboard in Resources */,
+				ED628AD51D211973001B404D /* MainCollectionViewCell.xib in Resources */,
 				EDE83F101CDB585500639B4C /* Assets.xcassets in Resources */,
 				EDE83F271CDB585500639B4C /* popView.xib in Resources */,
 				EDE83F231CDB585500639B4C /* sorts.plist in Resources */,
@@ -307,6 +316,7 @@
 				EDE83F171CDB585500639B4C /* PopViewController.m in Sources */,
 				EDE83F1E1CDB585500639B4C /* CatogriyModel.m in Sources */,
 				EDE83F181CDB585500639B4C /* SearchCityResultViewController.m in Sources */,
+				ED628AD41D211973001B404D /* MainCollectionViewCell.m in Sources */,
 				EDE83F0F1CDB585500639B4C /* AppDelegate.m in Sources */,
 				EDE83F131CDB585500639B4C /* ChangeCityViewController.m in Sources */,
 				EDE83F161CDB585500639B4C /* MyNavController.m in Sources */,
